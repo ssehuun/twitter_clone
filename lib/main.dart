@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:twitter_clone/features/view/login_view.dart';
 import 'package:twitter_clone/features/view/signup_view.dart';
 import 'package:twitter_clone/theme/theme.dart';
 
