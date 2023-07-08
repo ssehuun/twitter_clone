@@ -11,7 +11,7 @@ final authAPIProvider = Provider((ref) {
 });
 
 abstract class IAuthAPI {
-  FutureEither<models.Account> signUp({
+  FutureEither<models.User> signUp({
     required String email,
     required String password,
   });
@@ -22,7 +22,7 @@ class AuthAPI implements IAuthAPI {
   AuthAPI({required Account account}) : _account = account;
 
   @override
-  FutureEither<models.Account> signUp({
+  FutureEither<models.User> signUp({
     required String email,
     required String password,
   }) async {
